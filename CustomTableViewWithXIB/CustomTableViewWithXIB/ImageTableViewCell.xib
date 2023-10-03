@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="249" id="KGk-i7-Jjw" customClass="ImageTableViewCell" customModule="CustomTableViewWithXIB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="534" height="249"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="534" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BBQ" translatesAutoresizingMaskIntoConstraints="NO" id="fnr-yT-M4F">
+                        <rect key="frame" x="5" y="5" width="524" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="Ks5-nE-hhp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10Y-2n-tWE">
+                        <rect key="frame" x="5" y="210" width="524" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="LZg-2m-Tpl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fnr-yT-M4F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Hyk-O6-Ca6"/>
+                    <constraint firstAttribute="trailing" secondItem="10Y-2n-tWE" secondAttribute="trailing" constant="5" id="Qbk-YB-ajX"/>
+                    <constraint firstItem="10Y-2n-tWE" firstAttribute="top" secondItem="fnr-yT-M4F" secondAttribute="bottom" constant="5" id="S6Q-oY-Nnf"/>
+                    <constraint firstAttribute="bottom" secondItem="10Y-2n-tWE" secondAttribute="bottom" constant="5" id="iku-PG-Pt1"/>
+                    <constraint firstAttribute="trailing" secondItem="fnr-yT-M4F" secondAttribute="trailing" constant="5" id="qUR-vY-eeH"/>
+                    <constraint firstItem="10Y-2n-tWE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="rjl-wq-eIK"/>
+                    <constraint firstItem="fnr-yT-M4F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="s7d-Ko-TDl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="fnr-yT-M4F" id="qWh-fI-AMF"/>
+                <outlet property="lblImage" destination="10Y-2n-tWE" id="0H4-xb-Y4s"/>
+            </connections>
+            <point key="canvasLocation" x="302.29007633587787" y="91.901408450704224"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BBQ" width="1008" height="756"/>
+    </resources>
+</document>
