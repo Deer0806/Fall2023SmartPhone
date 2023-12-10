@@ -1,0 +1,6 @@
+framework module Pods_Seattle {
+  umbrella header "Pods-Seattle-umbrella.h"
+
+  export *
+  module * { export * }
+}
